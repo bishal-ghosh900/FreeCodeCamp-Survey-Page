@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">ABCcoding Survey Form</h1>
+        <p id="description">
+          <em>Thank you for taking the time to help us improve the platform</em>
+        </p>
+      </header>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="name"
+          required
+        /><br /><br />
+        <label for="email" id="email-label">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          id="email"
+          required
+        /><br /><br />
+        <label for="number" id="number-label">Age (optional)</label><br />
+        <input
+          type="number"
+          name="number"
+          min="10"
+          max="90"
+          placeholder="Age"
+          id="number"
+        /><br /><br />
+
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        ><br />
+        <select name="role" id="dropdown">
+          <option value="" disabled selected>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="no-answer">Prefer no to say</option>
+          <option value="others">Others</option></select
+        ><br /><br />
+
+        <label>Would you recommend ABCcoding to a friend?</label><br />
+        <input
+          type="radio"
+          name="recommendation"
+          id="recommendation1"
+          value="definitely"
+        />
+        <label for="recommendation1">Definitely</label><br />
+        <input
+          type="radio"
+          name="recommendation"
+          id="recommendation2"
+          value="maybe"
+        />
+        <label for="recommendation2">Maybe</label><br />
+        <input
+          type="radio"
+          name="recommendation"
+          id="recommendation3"
+          value="not-sure"
+        />
+        <label for="recommendation3">Not sure</label><br /><br />
+
+        <label>What is your favorite feature of ABCcoding?</label><br />
+        <select name="feature" id="feature">
+          <option value="" disabled selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option></select
+        ><br /><br />
+
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        ><br />
+        <input
+          type="checkbox"
+          name="improvement1"
+          value="front-end-projects"
+          id="improvement1"
+        />
+        <label for="improvement1">Front-end Projects</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement2"
+          value="back-end-projects"
+          id="improvement2"
+        />
+        <label for="improvement2">Back-end Projects</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement3"
+          value="data-visualization"
+          id="improvement3"
+        />
+        <label for="improvement3">Data Visualization</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement4"
+          value="challenges"
+          id="improvement4"
+        />
+        <label for="improvement4">Challenges</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement5"
+          value="open-source-community"
+          id="improvement5"
+        />
+        <label for="improvement5">Open Source Community</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement6"
+          value="gitter-help-rooms"
+          id="improvement6"
+        />
+        <label for="improvement6">Gitter help rooms</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement7"
+          value="videos"
+          id="improvement7"
+        />
+        <label for="improvement7">Videos</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement8"
+          value="city-meetups"
+          id="improvement8"
+        />
+        <label for="improvement8">City Meetups</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement9"
+          value="wiki"
+          id="improvement9"
+        />
+        <label for="improvement9">Wiki</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement10"
+          value="forum"
+          id="improvement10"
+        />
+        <label for="improvement10">Forum</label><br />
+
+        <input
+          type="checkbox"
+          name="improvement11"
+          value="additional-courses"
+          id="improvement11"
+        />
+        <label for="improvement11">Additional Courses</label><br /><br />
+
+        <label>Any comments or suggestions?</label><br />
+        <textarea placeholder="Enter your comment here..." style="resize: vertical; overflow: auto">
+        </textarea><br />
+
+        <input type="submit" value="Submit" id="submit" /><br />
+      </form>
+    </main>
+  </body>
+</html>
